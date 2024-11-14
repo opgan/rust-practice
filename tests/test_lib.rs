@@ -18,6 +18,6 @@ fn test_mul() {
 
 #[test]
 fn test_div() {
-    assert_eq!(div(1, 2), 0.5);
+    assert_eq!(div(1f32, 2f32), 0.5f32);
 }
 
