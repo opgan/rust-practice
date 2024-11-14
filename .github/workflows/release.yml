@@ -1,4 +1,4 @@
-name: Tests
+name: Build binary release 
 
 on: [push, pull_request]
 
@@ -10,9 +10,10 @@ jobs:
             - uses: actions/checkout@v1
             - uses: actions-rs/toolchain@v1
               with:
-                toolchain: stable
-                profile: minimal
-                components: clippy, rustfmt
-                override: true
+                    toolchain: stable
+                    profile: minimal
+                    components: clippy, rustfmt
+                    override: true
             - name: Run clippy
-              run: make test
+              run: make release
+
