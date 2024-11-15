@@ -5,14 +5,14 @@
 # RUST Project Scaffold
 Getting Rust installed and creating new projects
 
+##  Installing Rust
 | Command | Description |
 | ------- | ----------- |
-| ``` curl https://sh.rustup.rs -sSf | sh ``` | Download and install the latest stable version of Rust |
+| ``` curl https://sh.rustup.rs -sSf \| sh ``` | Download and install the latest stable version of Rust |
 | ``` rustc --version ```| Check version |
 | ``` rustup update ``` | Check update |
 | ``` rustup self uninstall ```  | Uninstall Rust |
 
-##  Installing Rust
 * Download and install the latest stable version of Rust: ``` curl https://sh.rustup.rs -sSf | sh ```
 
 
