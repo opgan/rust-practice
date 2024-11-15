@@ -2,7 +2,6 @@
 
 # rust-practice
 this is RUST practice
-<<<<<<< HEAD
 
 Compiling:
 rustc main.rs
