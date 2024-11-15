@@ -32,12 +32,27 @@ rustc main.rs
 * git commit -m "remarks"
 * git push
 
+| Command | Description |
+| ------- | ----------- |
+| `git status` | Check status |
+| `git add [file-name.txt]` | Add a file to the staging area |
+| `git add -A` | Add all new and changed files to the staging area |
+| `git commit -m "[commit message]"` | Commit changes |
+| `git stash` | Stash changes in a dirty working directory |
+| `git push` | Push changes to remote repository (remembered branch) |
+| `git pull` | Update local repository to the newest commit |
+
+
 ### Git formatting
-https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#styling-text
+REF: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#styling-text
 
 **This is bold text**
+
 ***All this text is important***
+
 This is a <sup>superscript</sup> text
+
 This is an <ins>underlined</ins> text
+
 > Text that is a quote
 
