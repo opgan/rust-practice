@@ -20,4 +20,3 @@ fn test_mul() {
 fn test_div() {
     assert_eq!(div(1f32, 2f32), 0.5f32);
 }
-
