@@ -28,7 +28,7 @@ Getting Rust installed and creating new projects
 
 
 ### Utility
-*Makefile
+* Makefile
 ```
 rust-version:
 	rustc --version
