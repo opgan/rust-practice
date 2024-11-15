@@ -27,7 +27,8 @@ Getting Rust installed and creating new projects
 | ``` make release ```  | Creating an executable in target/release |
 
 
-### Makefile utility
+### Utility
+*Makefile
 ```
 rust-version:
 	rustc --version
@@ -43,14 +44,6 @@ release:
 	cargo build --release
 all: format lint test run
 ```
-| Task | Command |
-| ------- | ----------- |
-| ``` rust-version: ``` | ``` rustc --version ``` |
-| ``` format: ```| ``` cargo fmt --quiet ```|
-| ``` test: ``` | ``` cargo test --quiet``` |
-| ``` run: ```| ``` cargo run ```|
-| ``` release: ``` | ``` cargo build --release ``` |
-| ``` all: ```| ``` format lint test run ```|
 
 ### Git commands used
 | Command | Description |
