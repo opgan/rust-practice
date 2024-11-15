@@ -38,6 +38,7 @@ image
 ### Git commands used
 | Command | Description |
 | ------- | ----------- |
+| https://github.com/opgan/Git-Commands/edit/master/README.md |
 | `git status` | Check status |
 | `git add [file-name.txt]` | Add a file to the staging area |
 | `git add -A` | Add all new and changed files to the staging area |
@@ -45,7 +46,7 @@ image
 | `git stash` | Stash changes in a dirty working directory |
 | `git push` | Push changes to remote repository (remembered branch) |
 | `git pull` | Update local repository to the newest commit |
-
+| `rm .git/index.lock` | Delete index.lock file in .git directory to remove another Git process running in repo |
 
 ### Git formatting
 | Description |
