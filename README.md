@@ -69,9 +69,9 @@ all: format lint test run
 ```
 
 ### Updating to existing Github repository
+https://github.com/opgan/Git-Commands/edit/master/README.md 
 | Command | Description |
 | ------- | ----------- |
-| web | https://github.com/opgan/Git-Commands/edit/master/README.md |
 | `git status` | Check status |
 | `git add [file-name.txt]` | Add a file to the staging area |
 | `git add -A` | Add all new and changed files to the staging area |
@@ -139,9 +139,9 @@ jobs:
 ```
 
 ### Git formatting
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#styling-text
 | Description |
 | ----------- |
-| https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#styling-text |
 | **This is bold text** |
 | ***All this text is important*** |
 | This is a <sup>superscript</sup> text |
