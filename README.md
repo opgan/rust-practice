@@ -162,10 +162,10 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 ```
 ``` 
 my_mod.rs
+
 fn private_fun() {
     println!("called `my_mod::private_function()`");
 }
-
 // Use the `pub` modifier to override default visibility.
 pub fn fun() {
     println!("called `my_mod::function()`");
@@ -174,6 +174,7 @@ pub fn fun() {
 ```
 ``` 
 lib.rs
+
 pub fn add(a: i32, b: i32) -> i32 {
     a + b
 }
@@ -182,15 +183,12 @@ pub fn add(a: i32, b: i32) -> i32 {
 main.rs
 
 mod my_mod;
-
 use crate::my_mod::fun;
 use a_new_project::add;
 
 fn main() {
     println!("Hello, world!");
     println!("add(1,2)={}", add(1, 2));
-
     fun();
-
 }
 ```
