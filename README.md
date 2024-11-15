@@ -18,3 +18,4 @@ git commit
 > Text that is a quote
 
 **This is bold text**
+_This text is italicized_
