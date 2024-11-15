@@ -7,18 +7,14 @@ Getting Rust installed and creating new projects
 
 | Command | Description |
 | ------- | ----------- |
-| ``` curl https://sh.rustup.rs -sSf sh ``` | Install rust |
+| ``` curl https://sh.rustup.rs -sSf | sh ``` | Download and install the latest stable version of Rust |
 | ``` rustc --version ```| Check version |
-| `git add -A` | Add all new and changed files to the staging area |
-| `git commit -m "[commit message]"` | Commit changes |
-| `git stash` | Stash changes in a dirty working directory |
-| `git push` | Push changes to remote repository (remembered branch) |
-| `git pull` | Update local repository to the newest commit |
+| ``` rustup update ``` | Check update |
+| ``` rustup self uninstall ```  | Uninstall Rust |
 
 ##  Installing Rust
-* run in terminal these commands
-* installing command: ``` curl https://sh.rustup.rs -sSf | sh ```
-* checking command for version and update: ``` rustc --version ``` ``` rustup update ```
+* Download and install the latest stable version of Rust: ``` curl https://sh.rustup.rs -sSf | sh ```
+
 
 ## Creating new project
 * creating: ``` cargo new project_name``` (note: Rust uses all-lowercase identifiers for functions and local variables)
