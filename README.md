@@ -1,3 +1,5 @@
+[![Build binary release](https://github.com/opgan/rust-practice/actions/workflows/release.yml/badge.svg)](https://github.com/opgan/rust-practice/actions/workflows/release.yml)
+
 # rust-practice
 this is RUST practice
 <<<<<<< HEAD
