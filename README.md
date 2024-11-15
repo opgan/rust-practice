@@ -2,8 +2,8 @@
 [![Tests](https://github.com/opgan/rust-practice/actions/workflows/main.yml/badge.svg)](https://github.com/opgan/rust-practice/actions/workflows/main.yml)
 [![Build binary release](https://github.com/opgan/rust-practice/actions/workflows/release.yml/badge.svg)](https://github.com/opgan/rust-practice/actions/workflows/release.yml)
 
-# RUST project scaffold (structure)
-getting Rust installed and creating new projects
+# RUST Project Scaffold
+Getting Rust installed and creating new projects
 
 Compiling:
 rustc main.rs
