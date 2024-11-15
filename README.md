@@ -17,18 +17,17 @@ Getting Rust installed and creating new projects
 | Command | Description |
 | ------- | ----------- |
 | ``` cargo new project_name ``` | Creating a Project with Cargo (use all-lowercase identifiers) |
-| ``` rustc --version ```| Check version |
+| ``` tree . ```| Display the project structure (first, cd to project directory) |
 | ``` rustup update ``` | Check update |
 | ``` rustup self uninstall ```  | Uninstall Rust |
 
+image
 
-* tree .
 .
 ├── Cargo.toml
 └── src
     └── main.rs
-Compiling:
-rustc main.rs
+
 
 * mv oldDIR newDIR
 * Cargo.lock and Cargo.toml: name field must be same as directory name
@@ -49,15 +48,12 @@ rustc main.rs
 
 
 ### Git formatting
-REF: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#styling-text
-
-**This is bold text**
-
-***All this text is important***
-
-This is a <sup>superscript</sup> text
-
-This is an <ins>underlined</ins> text
-
-> Text that is a quote
+| Description |
+| ----------- |
+| https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#styling-text |
+| **This is bold text** |
+| ***All this text is important*** |
+| This is a <sup>superscript</sup> text |
+| This is an <ins>underlined</ins> text |
+| > Text that is a quote |
 
