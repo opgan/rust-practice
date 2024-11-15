@@ -16,7 +16,8 @@ Getting Rust installed and creating new projects
 ## Creating new project
 | Command | Description |
 | ------- | ----------- |
-| ``` cargo new project_name ``` | Creating a Project with Cargo (use all-lowercase identifiers) |
+| ``` cargo new project_name ``` | Creating a Project with Cargo  |
+| ``` mv oldDIR newDIR ```  | Remaning directory (use all-lowercase identifiers) |
 | ``` tree . ```| Display the project structure (first, cd to project directory) |
 | ``` touch Makefile ``` | Create a make utility (Makefile) in project directory|
 | ``` make format ```  | Formating codes |
