@@ -24,25 +24,13 @@ Getting Rust installed and creating new projects
 ### Makefile utility
 | Task | Command |
 | ------- | ----------- |
-| ``` rust-version: ``` | rustc --version |
-| ``` tree . ```| Display the project structure (first, cd to project directory) |
-| ``` touch Makefile ``` | Create a make utility (Makefile) in project directory|
-| ``` rustup self uninstall ```  | Uninstall Rust |
-
-
+| ``` rust-version: ``` | ``` rustc --version ``` |
+| ``` format: ```| ``` cargo fmt --quiet ```|
+| ``` test: ``` | ``` cargo test --quiet``` |
+| ``` run: ```| ``` cargo run ```|
+| ``` release: ``` | ``` cargo build --release ``` |
+| ``` all: ```| ``` format lint test run ```|
 	
-format:
-	cargo fmt --quiet
-lint:
-	cargo clippy --quiet
-test:
-	cargo test --quiet
-run:
-	cargo run
-release:
-	cargo build --release
-all: format lint test run
-
 
 * mv oldDIR newDIR
 * make test, lint, format, all
