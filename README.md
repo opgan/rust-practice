@@ -7,13 +7,15 @@ Getting Rust installed and creating new projects
 
 ##  Installing Rust
 
-* run in terminal: ``` curl https://sh.rustup.rs -sSf | sh```
-* 
+* run in terminal: ``` curl https://sh.rustup.rs -sSf | sh ```
+* check version: ``` rustc --version ``` 
+
+
 Compiling:
 rustc main.rs
 
 
-* To check version: rustc --version
+
 * To start a new package with Cargo: cargo new hello_world
 
 
