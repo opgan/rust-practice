@@ -19,7 +19,9 @@ Getting Rust installed and creating new projects
 | ``` cargo new project_name ``` | Creating a Project with Cargo (use all-lowercase identifiers) |
 | ``` tree . ```| Display the project structure (first, cd to project directory) |
 | ``` touch Makefile ``` | Create a make utility (Makefile) in project directory|
-| ``` rustup self uninstall ```  | Uninstall Rust |
+| ``` make format ```  | Formating codes |
+| ``` make lint ```  |  Detect code mistakes |
+| ``` make test ```  | Testing with assert |
 
 ### Makefile utility
 | Task | Command |
