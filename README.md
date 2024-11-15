@@ -16,3 +16,5 @@ git add
 git commit
 ```
 > Text that is a quote
+
+**This is bold text**
