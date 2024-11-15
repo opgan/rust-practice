@@ -41,45 +41,13 @@ Getting Rust installed and creating new projects
     │   ├── a_new__project.d
     │   ├── build
     │   ├── deps
-    │   │   ├── a_new__project-1aa3bb9016acc2ae.d
-    │   │   ├── a_new__project-3ded5645a512c160
-    │   │   ├── a_new__project-3ded5645a512c160.d
-    │   │   ├── a_new__project-bd9564115d356793.d
-    │   │   ├── liba_new__project-1aa3bb9016acc2ae.rmeta
-    │   │   └── liba_new__project-bd9564115d356793.rmeta
     │   ├── examples
     │   └── incremental
-    │       ├── a_new__project-0mlp2tvocoh8w
-    │       │   ├── s-h1tiag2ii6-0y8vg6s-2jo17jw9n6mqn4jnfv64sy7q3
-    │       │   │   ├── dep-graph.bin
-    │       │   │   ├── query-cache.bin
-    │       │   │   └── work-products.bin
-    │       │   └── s-h1tiag2ii6-0y8vg6s.lock
-    │       ├── a_new__project-11krr1hp962ls
-    │       │   ├── s-h1ti8fjofu-1h3tsoj-77aclmi19lfq87jz1n8kewkb6
-    │       │   │   ├── 6trlwa3m9jc9a64ep6ci8jfdh.o
-    │       │   │   ├── 7yt4tva7mgmo3ch4n74ohhgil.o
-    │       │   │   ├── 8jd6gwzbfnt4qwxel4nl09g1n.o
-    │       │   │   ├── 945fjiu4zsnieu6i2c5e50pkm.o
-    │       │   │   ├── ahlf226onqazmyf7d1ref4urp.o
-    │       │   │   ├── d35zkflpj2tqqlbhtyruevwg3.o
-    │       │   │   ├── dep-graph.bin
-    │       │   │   ├── query-cache.bin
-    │       │   │   └── work-products.bin
-    │       │   └── s-h1ti8fjofu-1h3tsoj.lock
-    │       └── a_new__project-3c8lgibv4gjt4
-    │           ├── s-h1ti192gdr-0vsb8i0-3xo7ozfduxm4m2waatjmye65e
-    │           │   ├── dep-graph.bin
-    │           │   ├── query-cache.bin
-    │           │   └── work-products.bin
-    │           └── s-h1ti192gdr-0vsb8i0.lock
     └── release
         ├── a_new__project
         ├── a_new__project.d
         ├── build
         ├── deps
-        │   ├── a_new__project-873a7b852a93e9ef
-        │   └── a_new__project-873a7b852a93e9ef.d
         ├── examples
         └── incremental
 ```
@@ -100,7 +68,7 @@ release:
 all: format lint test run
 ```
 
-### Git commands used
+### Updating to existing Github repository
 | Command | Description |
 | ------- | ----------- |
 | web | https://github.com/opgan/Git-Commands/edit/master/README.md |
@@ -113,7 +81,7 @@ all: format lint test run
 | `git pull` | Update local repository to the newest commit |
 | `rm .git/index.lock` | Delete index.lock file in .git directory to remove another Git process running in repo |
 
-### Github workflows
+### Github action workflows
 * lint.yml
 ```
 name: Clippy
