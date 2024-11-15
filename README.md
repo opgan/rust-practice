@@ -26,6 +26,11 @@ Getting Rust installed and creating new projects
 | ``` make run ```  | Running project |
 | ``` make release ```  | Creating an executable in target/release |
 
+```
+.
+├── lib.rs
+└── main.rs
+```
 
 ### Utility
 * Makefile
