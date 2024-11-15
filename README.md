@@ -5,6 +5,16 @@
 # RUST Project Scaffold
 Getting Rust installed and creating new projects
 
+| Command | Description |
+| ------- | ----------- |
+| `curl https://sh.rustup.rs -sSf | sh` | installing rust |
+| `git add [file-name.txt]` | Add a file to the staging area |
+| `git add -A` | Add all new and changed files to the staging area |
+| `git commit -m "[commit message]"` | Commit changes |
+| `git stash` | Stash changes in a dirty working directory |
+| `git push` | Push changes to remote repository (remembered branch) |
+| `git pull` | Update local repository to the newest commit |
+
 ##  Installing Rust
 * run in terminal these commands
 * installing command: ``` curl https://sh.rustup.rs -sSf | sh ```
@@ -28,10 +38,6 @@ rustc main.rs
 
 
 ### Git commands used
-* git push
-* git commit -m "remarks"
-* git push
-
 | Command | Description |
 | ------- | ----------- |
 | `git status` | Check status |
