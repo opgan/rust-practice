@@ -22,7 +22,7 @@ Getting Rust installed and creating new projects
 | ``` rustup self uninstall ```  | Uninstall Rust |
 
 image
-
+> 
 .
 ├── Cargo.toml
 └── src
@@ -32,13 +32,13 @@ image
 * mv oldDIR newDIR
 * Cargo.lock and Cargo.toml: name field must be same as directory name
 * make test, lint, format, all
-* git add *, git commit -m "remarks", git push
+
 
 
 ### Git commands used
 | Command | Description |
 | ------- | ----------- |
-| https://github.com/opgan/Git-Commands/edit/master/README.md |
+| web | https://github.com/opgan/Git-Commands/edit/master/README.md |
 | `git status` | Check status |
 | `git add [file-name.txt]` | Add a file to the staging area |
 | `git add -A` | Add all new and changed files to the staging area |
