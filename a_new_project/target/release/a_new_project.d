@@ -1,0 +1,1 @@
+/workspaces/rust-practice/a_new_project/target/release/a_new_project: /workspaces/rust-practice/a_new_project/src/lib.rs /workspaces/rust-practice/a_new_project/src/main.rs /workspaces/rust-practice/a_new_project/src/my_mod.rs
