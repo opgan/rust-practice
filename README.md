@@ -7,7 +7,7 @@ Getting Rust installed and creating new projects
 
 | Command | Description |
 | ------- | ----------- |
-| ` curl https://sh.rustup.rs -sSf | sh ` | Install rust |
+| ``` curl https://sh.rustup.rs -sSf sh ``` | Install rust |
 | ``` rustc --version ```| Check version |
 | `git add -A` | Add all new and changed files to the staging area |
 | `git commit -m "[commit message]"` | Commit changes |
