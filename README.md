@@ -20,32 +20,4 @@ rustc main.rs
 * git add *, git commit -m "remarks", git push
 
 * To start a new package with Cargo: cargo new hello_world
-
-
-# A first-level heading
-## A second-level heading
-### A third-level heading
-
-```
-git status
-git add
-git commit
-```
-> Text that is a quote
-
-**This is bold text**
-
-_This text is italicized_
-
-This is a <sub>subscript</sub> text
-
-This is a <sup>subscript</sup> text
-
-This is an <ins>underlined</ins> text
-
-
-**This text is _extremely_ important**
-
-***All this text is important***
-
-
+>>>>>>> d323928 (test rust)
