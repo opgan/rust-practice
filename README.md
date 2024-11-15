@@ -18,21 +18,34 @@ Getting Rust installed and creating new projects
 | ------- | ----------- |
 | ``` cargo new project_name ``` | Creating a Project with Cargo (use all-lowercase identifiers) |
 | ``` tree . ```| Display the project structure (first, cd to project directory) |
-| ``` rustup update ``` | Check update |
+| ``` touch Makefile ``` | Create a make utility (Makefile) in project directory|
 | ``` rustup self uninstall ```  | Uninstall Rust |
 
-image
-> 
-.
-├── Cargo.toml
-└── src
-    └── main.rs
+### Makefile utility
+| Task | Command |
+| ------- | ----------- |
+| ``` rust-version: ``` | rustc --version |
+| ``` tree . ```| Display the project structure (first, cd to project directory) |
+| ``` touch Makefile ``` | Create a make utility (Makefile) in project directory|
+| ``` rustup self uninstall ```  | Uninstall Rust |
+
+
+	
+format:
+	cargo fmt --quiet
+lint:
+	cargo clippy --quiet
+test:
+	cargo test --quiet
+run:
+	cargo run
+release:
+	cargo build --release
+all: format lint test run
 
 
 * mv oldDIR newDIR
-* Cargo.lock and Cargo.toml: name field must be same as directory name
 * make test, lint, format, all
-
 
 
 ### Git commands used
