@@ -148,3 +148,20 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 | This is an <ins>underlined</ins> text |
 | > Text that is a quote |
 
+### Rust modulular programming example project:
+```
+./a_new_project/
+├── Cargo.lock
+├── Cargo.toml
+├── Makefile
+├── src
+│   ├── lib.rs
+│   ├── main.rs
+│   └── my_mod.rs
+└── target
+```
+``` lib.rs
+pub fn add(a: i32, b: i32) -> i32 {
+    a + b
+}
+```
