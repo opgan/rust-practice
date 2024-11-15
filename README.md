@@ -32,11 +32,6 @@ Getting Rust installed and creating new projects
 | ``` run: ```| ``` cargo run ```|
 | ``` release: ``` | ``` cargo build --release ``` |
 | ``` all: ```| ``` format lint test run ```|
-	
-
-* mv oldDIR newDIR
-* make test, lint, format, all
-
 
 ### Git commands used
 | Command | Description |
