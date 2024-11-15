@@ -14,7 +14,10 @@ Getting Rust installed and creating new projects
 Compiling:
 rustc main.rs
 
-
+* mv oldDIR newDIR
+* Cargo.lock and Cargo.toml: name field must be same as directory name
+* make test, lint, format, all
+* git add *, git commit -m "remarks", git push
 
 * To start a new package with Cargo: cargo new hello_world
 
