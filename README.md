@@ -50,6 +50,28 @@ Getting Rust installed and creating new projects
 | `git pull` | Update local repository to the newest commit |
 | `rm .git/index.lock` | Delete index.lock file in .git directory to remove another Git process running in repo |
 
+### Github workflows
+name: Build binary release
+
+on: [push, pull_request]
+
+jobs: 
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v1
+            - uses: actions-rs/toolchain@v1
+              with:
+                    toolchain: stable
+                    profile: minimal
+                    components: clippy, rustfmt
+                    override: true
+            - name: Run clippy
+              run: make release
+
+
+
 ### Git formatting
 | Description |
 | ----------- |
