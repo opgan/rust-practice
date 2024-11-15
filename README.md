@@ -5,10 +5,16 @@
 # RUST Project Scaffold
 Getting Rust installed and creating new projects
 
+##  Installing Rust
+
+* run in terminal: 
+```
+curl https://sh.rustup.rs -sSf | sh
+```
 Compiling:
 rustc main.rs
 
-* To install RUST: curl https://sh.rustup.rs -sSf | sh
+
 * To check version: rustc --version
 * To start a new package with Cargo: cargo new hello_world
 
