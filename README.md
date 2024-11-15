@@ -23,3 +23,6 @@ _This text is italicized_
 
 **This text is _extremely_ important**
 
+***All this text is important***
+
+
