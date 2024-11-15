@@ -148,7 +148,7 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 | This is an <ins>underlined</ins> text |
 | > Text that is a quote |
 
-### Rust modulular programming example project:
+### Rust modular programming example project:
 ```
 ./a_new_project/
 ├── Cargo.lock
@@ -160,7 +160,8 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 │   └── my_mod.rs
 └── target
 ```
-``` 
+* Create my_mod.rs and lib.rs with some content
+```
 my_mod.rs
 
 fn private_fun() {
@@ -179,6 +180,7 @@ pub fn add(a: i32, b: i32) -> i32 {
     a + b
 }
 ```
+* Add content to default main.rs
 ``` 
 main.rs
 
