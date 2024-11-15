@@ -11,7 +11,6 @@ Getting Rust installed and creating new projects
 * checking command for version and update: ``` rustc --version ``` ``` rustup update ```
 
 ## Creating new project
-* run in terminal these commands
 * creating: ``` cargo new project_name``` (note: Rust uses all-lowercase identifiers for functions and local variables)
 * cd a_new_project
 * tree .
@@ -27,4 +26,18 @@ rustc main.rs
 * make test, lint, format, all
 * git add *, git commit -m "remarks", git push
 
+
+### Git commands used
+* git push
+* git commit -m "remarks"
+* git push
+
+### Git formatting
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#styling-text
+
+**This is bold text**
+***All this text is important***
+This is a <sup>superscript</sup> text
+This is an <ins>underlined</ins> text
+> Text that is a quote
 
