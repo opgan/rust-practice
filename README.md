@@ -23,6 +23,9 @@ Getting Rust installed and creating new projects
 | ``` make format ```  | Formating codes |
 | ``` make lint ```  |  Detect code mistakes |
 | ``` make test ```  | Testing with assert |
+| ``` make run ```  | Running project |
+| ``` make release ```  | Creating an executable in target/release |
+
 
 ### Makefile utility
 | Task | Command |
