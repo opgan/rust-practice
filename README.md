@@ -7,8 +7,8 @@ Getting Rust installed and creating new projects
 
 | Command | Description |
 | ------- | ----------- |
-| `curl https://sh.rustup.rs -sSf | sh` | installing rust |
-| `git add [file-name.txt]` | Add a file to the staging area |
+| ```curl https://sh.rustup.rs -sSf | sh``` | Install rust |
+| ``` rustc --version ```| Check version |
 | `git add -A` | Add all new and changed files to the staging area |
 | `git commit -m "[commit message]"` | Commit changes |
 | `git stash` | Stash changes in a dirty working directory |
