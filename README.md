@@ -13,12 +13,15 @@ Getting Rust installed and creating new projects
 | ``` rustup update ``` | Check update |
 | ``` rustup self uninstall ```  | Uninstall Rust |
 
-* Download and install the latest stable version of Rust: ``` curl https://sh.rustup.rs -sSf | sh ```
-
-
 ## Creating new project
-* creating: ``` cargo new project_name``` (note: Rust uses all-lowercase identifiers for functions and local variables)
-* cd a_new_project
+| Command | Description |
+| ------- | ----------- |
+| ``` cargo new project_name ``` | Creating a Project with Cargo (use all-lowercase identifiers) |
+| ``` rustc --version ```| Check version |
+| ``` rustup update ``` | Check update |
+| ``` rustup self uninstall ```  | Uninstall Rust |
+
+
 * tree .
 .
 ├── Cargo.toml
