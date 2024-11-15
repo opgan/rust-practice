@@ -19,7 +19,7 @@ Getting Rust installed and creating new projects
 | ``` cargo new project_name ``` | Creating a Project with Cargo  |
 | ``` mv oldDIR newDIR ```  | Remaning directory (use all-lowercase identifiers). |
 | ``` tree . ```| Display the project structure (first, cd to project directory) as shown below  |
-| ``` touch Makefile ``` | Create a make utility (Makefile) in project directory|
+| ``` touch Makefile ``` | Create a make utility (Makefile) in project directory as shown below |
 | ``` make format ```  | Formating codes |
 | ``` make lint ```  |  Detect code mistakes |
 | ``` make test ```  | Testing with assert |
@@ -83,8 +83,6 @@ Getting Rust installed and creating new projects
         ├── examples
         └── incremental
 ```
-
-### Utility
 * Makefile
 ```
 rust-version:
