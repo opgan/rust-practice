@@ -7,6 +7,7 @@ Getting Rust installed and creating new projects
 
 ##  Installing Rust
 * https://www.rust-lang.org/tools/install
+
 | Command | Description |
 | ------- | ----------- |
 | ``` curl https://sh.rustup.rs -sSf \| sh ``` | Download and install the latest stable version of Rust |
