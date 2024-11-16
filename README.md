@@ -162,7 +162,9 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 | This is an <ins>underlined</ins> text |
 | > Text that is a quote |
 
-## Rust programming example project:
+## Rust programming example
+* Rust provides a powerful module system that can be used to hierarchically split code in logical units (modules), and manage visibility (public/private) between them.
+
 ```
 ./a_new_project/
 ├── Cargo.lock
@@ -174,7 +176,6 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 │   └── my_mod.rs
 └── target
 ```
-* Rust provides a powerful module system that can be used to hierarchically split code in logical units (modules), and manage visibility (public/private) between them.
 * my_mod.rs and lib.rs can contain one or more functions
 ```
 my_mod.rs
