@@ -163,6 +163,7 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 | > Text that is a quote |
 
 ## Rust programming example
+* https://doc.rust-lang.org/rust-by-example/index.html
 * Rust provides a powerful module system that can be used to hierarchically split code in logical units (modules), and manage visibility (public/private) between them.
 
 ```
