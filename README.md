@@ -213,16 +213,20 @@ fn main() {
 ```
 
 ## Actix-Web framework practice example
+* Actix Web (https://actix.rs/) is a powerful, pragmatic, and extremely fast web framework for Rust
+* Active-Web is widely adopted according to crates registry: https://crates.io/search?q=web%20framework&sort=downloads
+
 ```
 ./actix-web-practise/
 ├── Cargo.lock
 ├── Cargo.toml
 ├── Makefile
 ├── src
-│   └── main.rs
+│   └── main.rs
 └── target
 ```
-
+* Cargo.toml dependencies configuration look for dependencies on crates.io
+* Add actix-web as a dependency by adding the following to the Cargo.toml file.
 ```
 Cargo.toml
 
@@ -234,6 +238,9 @@ edition = "2021"
 [dependencies]
 actix-web = "4"
 ```
+* App is started inside an HttpServer which will serve incoming requests
+* App::service for the handlers using routing macros and App::route for manually routed handlers
+
 ```
 main.rs
 use actix_web::{get, post, web, App, HttpResponse, HttpServer, Responder};
