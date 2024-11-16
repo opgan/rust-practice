@@ -2,10 +2,11 @@
 [![Tests](https://github.com/opgan/rust-practice/actions/workflows/main.yml/badge.svg)](https://github.com/opgan/rust-practice/actions/workflows/main.yml)
 [![Build binary release](https://github.com/opgan/rust-practice/actions/workflows/release.yml/badge.svg)](https://github.com/opgan/rust-practice/actions/workflows/release.yml)
 
-# RUST Project Scaffold
+# Getting Started with RUST  
 Getting Rust installed and creating new projects
 
 ##  Installing Rust
+* https://www.rust-lang.org/tools/install
 | Command | Description |
 | ------- | ----------- |
 | ``` curl https://sh.rustup.rs -sSf \| sh ``` | Download and install the latest stable version of Rust |
@@ -16,7 +17,7 @@ Getting Rust installed and creating new projects
 ## Creating new project
 | Command | Description |
 | ------- | ----------- |
-| ``` cargo new project_name ``` | Creating a Project with Cargo  |
+| ``` cargo new project_name ``` | Creating a Project with Cargo. Refer to project structure below. |
 | ``` mv oldDIR newDIR ```  | Remaning directory (use all-lowercase identifiers). |
 | ``` tree . ```| Display the project structure (first, cd to project directory) as shown below  |
 | ``` touch Makefile ``` | Create a make utility (Makefile) in project directory as shown below |
@@ -26,7 +27,7 @@ Getting Rust installed and creating new projects
 | ``` make run ```  | Running project |
 | ``` make release ```  | Creating an executable in target/release |
 
-* Project structure
+* Rust project structure
 ```
 .
 ├── Cargo.lock
@@ -51,7 +52,8 @@ Getting Rust installed and creating new projects
         ├── examples
         └── incremental
 ```
-* Makefile
+* Makefile utility file defines a set of tasks (formatting, lint, test, run, etc) to be executed for build, tests, release and deploy as a good practice for better continuous integration and deployment (CI/CD).
+* lint lint tool checks project source files for potential bugs and optimization improvements for correctness
 ```
 rust-version:
 	rustc --version
@@ -68,7 +70,7 @@ release:
 all: format lint test run
 ```
 
-### Updating to existing Github repository
+### Updating Github repository (between local and remote environments)
 https://github.com/opgan/Git-Commands/edit/master/README.md 
 | Command | Description |
 | ------- | ----------- |
@@ -82,6 +84,17 @@ https://github.com/opgan/Git-Commands/edit/master/README.md
 | `rm .git/index.lock` | Delete index.lock file in .git directory to remove another Git process running in repo |
 
 ### Github action workflows
+* https://docs.github.com/en/actions/writing-workflows/about-workflows
+* Configurable automated process that will run one or more jobs. Defined by a YAML file in the repository and will run when triggered by an event in the repository
+* Similar automation as in Makefile in local environment
+```
+$ tree .github/workflows/
+.github/workflows/
+├── lint.yml
+├── main.yml
+├── release.yml
+└── tests.yml
+```
 * lint.yml
 ```
 name: Clippy
@@ -148,7 +161,7 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 | This is an <ins>underlined</ins> text |
 | > Text that is a quote |
 
-### Rust modular programming example project:
+### Rust programming example project:
 ```
 ./a_new_project/
 ├── Cargo.lock
@@ -160,7 +173,8 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 │   └── my_mod.rs
 └── target
 ```
-* Create my_mod.rs and lib.rs with some content
+* Rust provides a powerful module system that can be used to hierarchically split code in logical units (modules), and manage visibility (public/private) between them.
+* my_mod.rs and lib.rs can contain one or more functions
 ```
 my_mod.rs
 
@@ -180,7 +194,7 @@ pub fn add(a: i32, b: i32) -> i32 {
     a + b
 }
 ```
-* Add content to default main.rs
+* The declaration in main.rs will look for a file named `my_mod.rs` and will insert its contents inside a module named `my_mod` under main.rs scope
 ``` 
 main.rs
 
@@ -215,7 +229,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-<ins>actix-web = "4"</ins> 
+actix-web = "4"
 ```
 ```
 main.rs
