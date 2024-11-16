@@ -162,7 +162,7 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 | This is an <ins>underlined</ins> text |
 | > Text that is a quote |
 
-## Rust programming example
+## Rust programming practise
 * https://doc.rust-lang.org/rust-by-example/index.html
 * Rust provides a powerful module system that can be used to hierarchically split code in logical units (modules), and manage visibility (public/private) between them.
 
@@ -212,9 +212,10 @@ fn main() {
 }
 ```
 
-## Actix-Web framework practice example
+## Actix-Web framework practice
 * Actix Web (https://actix.rs/) is a powerful, pragmatic, and extremely fast web framework for Rust
 * Active-Web is widely adopted according to crates registry: https://crates.io/search?q=web%20framework&sort=downloads
+
 
 ```
 ./actix-web-practise/
@@ -237,6 +238,9 @@ edition = "2021"
 
 [dependencies]
 actix-web = "4"
+shuttle-actix-web = "0.48"
+shuttle-runtime = "0.48"
+tokio = "1"
 ```
 * App is started inside an HttpServer which will serve incoming requests
 * App::service for the handlers using routing macros and App::route for manually routed handlers
@@ -270,5 +274,26 @@ async fn main() -> std::io::Result<()> {
     .bind(("127.0.0.1", 8080))?
     .run()
     .await
+}
+```
+* Shuttle has out-of-the-box support for Actix Web. For hosting web service on Shuttle: https://actix.rs/docs/shuttle/
+```
+use actix_web::{web::ServiceConfig};
+use actix_web::{get, HttpResponse, Responder};
+use shuttle_actix_web::ShuttleActixWeb;
+
+#[get("/")]
+async fn hello_world() -> impl Responder {
+    HttpResponse::Ok().body("Hello world!")
+}
+
+#[shuttle_runtime::main]
+async fn main() -> ShuttleActixWeb<impl FnOnce(&mut ServiceConfig) + Send + Clone + 'static> {
+    let config = move |cfg: &mut ServiceConfig| {
+        // set up your service here, e.g.:
+        cfg.service(hello_world);
+    };
+
+    Ok(config.into())
 }
 ```
