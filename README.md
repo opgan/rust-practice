@@ -162,7 +162,7 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 | This is an <ins>underlined</ins> text |
 | > Text that is a quote |
 
-### Rust programming example project:
+## Rust programming example project:
 ```
 ./a_new_project/
 ├── Cargo.lock
@@ -210,7 +210,7 @@ fn main() {
 }
 ```
 
-### Actix-Web framework practice example
+## Actix-Web framework practice example
 ```
 ./actix-web-practise/
 ├── Cargo.lock
